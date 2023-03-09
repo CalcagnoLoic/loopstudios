@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Alata;
+  src: url(../fonts/Alata/Alata-Regular.ttf);
+}
+
+@font-face {
+  font-family: Josephin;
+  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
