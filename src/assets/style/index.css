@@ -16,7 +16,7 @@ header {
   background-image: url(../images/mobile/hero-mobile.jpg);
 } 
 
-@media (min-width: 509px) {
+@media (min-width: 640px) {
   header {
     background-image: url(../images/desktop/hero-desktop.jpg);
   }
