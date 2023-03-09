@@ -6,7 +6,7 @@ import twitter from '../assets/images/icon-twitter.svg';
 
 const Footer = () => {
     return (
-        <>
+        <footer className="bg-Black p-5 md:px-32 xl:px-40 flex flex-col lg:flex-row lg:justify-between">
             <div className='self-center mb-5 lg:mb-0'>
                 <img src={logo} alt="Logo Loopstudio" className='py-10 lg:mb-8 lg:py-0 '/>
                 <ul className="text-White flex flex-col gap-5 lg:flex-row">
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
                 <p className='text-Very-Dark-Gray self-center'>&copy; 2021 Loopstudios. All rights reserved</p>
             </div>
-        </>
+        </footer>
     )
 }
 
