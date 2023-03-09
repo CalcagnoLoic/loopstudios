@@ -6,8 +6,8 @@ module.exports = {
       colors: {
         'White': 'hsl(0, 0%, 100%)',
         'Black': 'hsl(0, 0%, 0%)',
-        'Dark Gray': 'hsl(0, 0%, 55%)',
-        'Very Dark Gray': 'hsl(0, 0%, 41%)',
+        'Dark-Gray': 'hsl(0, 0%, 55%)',
+        'Very-Dark-Gray': 'hsl(0, 0%, 41%)',
       }, 
       fontFamily: {
         'alata': ['Alata'],
