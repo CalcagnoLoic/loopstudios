@@ -12,11 +12,7 @@ module.exports = {
       fontFamily: {
         'alata': ['Alata'],
         'josephin': ['Josephin'],
-      }, 
-      backgroundImage: {
-        'header-mobile': "url('src/assets/images/mobile/image-hero.jpg')", 
-        'header-desktop': "url('src/assets/images/desktop/image-hero.jpg')", 
-      }
+      },
     },
   },
   plugins: [],
