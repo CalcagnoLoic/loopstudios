@@ -1,21 +1,27 @@
 import { CardsMobile } from "./CardsMobile"
 import { CardsDesktop } from "./CardsDesktop"
+import { Button } from "./Button"
 
 const Creations = () => {
 
     return (
         <>
-            <h2 className="uppercase text-center text-4xl mt-12 font-light mb-8">Our creations</h2>
+            <div className="md:flex justify-between p-5 sm:px-16 md:px-32 xl:px-40 self-baseline">
+                <h2 className="uppercase text-center text-4xl mt-12 font-light mb-8">Our creations</h2>
+                <div className="hidden md:block self-center md:w-1/2">
+                    <Button />
+                </div>
+            </div>
 
-            <div className="md:hidden">
+            <div className="block md:hidden p-5 sm:px-16 md:px-32 xl:px-40">
                 <CardsMobile />
             </div>
-            <div className="hidden md:grid">
+            <div className="hidden md:block p-5 sm:px-16 md:px-32 xl:px-40">
                 <CardsDesktop />
             </div>
 
-            <div className="flex justify-center items-center">
-                <button className="uppercase border-2 border-black w-1/3 py-2 mb-10 font-alata hover:cursor-pointer hover:text-White hover:bg-Black duration-1000 text-lg">see all</button>           
+            <div className="md:hidden">
+                <Button />
             </div>
         </>
     )
