@@ -6,9 +6,9 @@ const Creations = () => {
 
     return (
         <>
-            <div className="md:flex justify-between p-5 sm:px-16 md:px-32 xl:px-40 self-baseline">
-                <h2 className="uppercase text-center text-4xl mt-12 font-light mb-8">Our creations</h2>
-                <div className="hidden md:block self-center md:w-1/2">
+            <div className=" p-5 sm:px-16 md:px-32 xl:px-40 md:flex md:justify-between">
+                <h2 className="uppercase text-center text-4xl mt-12 font-light mb-8 self-center">Our creations</h2>
+                <div className="hidden md:block md:w-1/2 self-center">
                     <Button />
                 </div>
             </div>
@@ -20,7 +20,7 @@ const Creations = () => {
                 <CardsDesktop />
             </div>
 
-            <div className="md:hidden">
+            <div className="md:hidden mb-10">
                 <Button />
             </div>
         </>
