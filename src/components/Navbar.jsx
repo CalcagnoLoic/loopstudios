@@ -34,7 +34,8 @@ const Navbar = () => {
                 <nav className={`fixed top-[-100vh] left-0 right-0 h-screen bg-Black transition-all duration-700 md:hidden ${menu === true ? 'top-[0]' : ''}`}>
                     <div className="px-5 flex flex-col justify-center items-start h-full text-Dark-Gray text-4xl uppercase">
                         {navbar.map(({id, text}) => (
-                            <a className="py-5" href='/' key={id}>{text}</a>
+                            // eslint-disable-next-line
+                            <a className="py-5" href='#' key={id}>{text}</a>
                         ))}
                     </div>
                 </nav>
