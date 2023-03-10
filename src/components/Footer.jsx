@@ -3,18 +3,22 @@ import facebook from '../assets/images/icon-facebook.svg';
 import instagram from '../assets/images/icon-instagram.svg';
 import pinterest from '../assets/images/icon-pinterest.svg';
 import twitter from '../assets/images/icon-twitter.svg';
+import { useState } from 'react';
+import { dataNavbar } from '../data/dataNavbar';
+
 
 const Footer = () => {
+    // eslint-disable-next-line
+    const [link, setLink] = useState(dataNavbar)
     return (
         <footer className="bg-Black p-5 md:px-32 xl:px-40 flex flex-col lg:flex-row lg:justify-between">
             <div className='self-center mb-5 lg:mb-0'>
                 <img src={logo} alt="Logo Loopstudio" className='py-10 lg:mb-8 lg:py-0 '/>
                 <div className="text-White flex flex-col gap-5 lg:flex-row">
-                    <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-5 hover:after:mx-auto" href='/'>About</a>
-                    <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-7 hover:after:mx-auto" href='/'>Careers</a>
-                    <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-5 hover:after:mx-auto" href='/'>Event</a>
-                    <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-8 hover:after:mx-auto" href='/'>Products</a>
-                    <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-8 hover:after:mx-auto" href='/'>Support</a>
+                    {link.map(({id, text}) => (
+                        // eslint-disable-next-line
+                        <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-5 hover:after:mx-auto" href='#' key={id}>{text}</a>
+                    ))}
                 </div>
             </div>
             <div className='flex flex-col py-10'>

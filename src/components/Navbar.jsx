@@ -42,7 +42,8 @@ const Navbar = () => {
                 <nav className='hidden md:flex'>
                     <div className="text-White md:flex md:gap-10">
                         {navbar.map(({id, text}) => (
-                            <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-5 hover:after:mx-auto" href='/' key={id}>{text}</a>
+                            // eslint-disable-next-line
+                            <a className="self-center hover:after:content-[''] hover:after:block hover:after:bg-White hover:after:h-[2px] hover:after:w-5 hover:after:mx-auto" href='#' key={id}>{text}</a>
                         ))}
                     </div>
                 </nav>
